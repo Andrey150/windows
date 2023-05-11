@@ -1,0 +1,140 @@
+.product {
+  &-wrap {
+    .MuiTypography-root {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+  &-description {
+    flex: 1 1 100%;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    h4 {
+      margin-bottom: 1rem;
+    }
+  }
+  &-item {
+    flex: 1 1 40%;
+    &__img {
+      margin-bottom: 25px;
+      img {
+        max-width: 40vw;
+        width: 370px;
+      }
+    }
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      max-width: 450px;
+      width: 32vw;
+      margin-bottom: 1.5rem;
+      &-title {
+        margin-bottom: 1rem;
+        margin-right: 10px;
+      }
+      &-price {
+        font-weight: 700;
+        color: #000;
+      }
+      &-sale {
+        img {
+          width: 40px;
+        }
+      }
+    }
+    &__characteristics {
+      max-width: 540px;
+      color: #878ea7;
+      margin-bottom: 1.5rem;
+      &-description {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        position: relative;
+        white-space: nowrap;
+        align-items: baseline;
+        max-width: 450px;
+        span {
+          width: 100%;
+          border-bottom: 1px dashed #9c9c9c;
+        }
+      }
+    }
+
+    &__button {
+      background-color: #0069b4;
+      padding: 1rem 1.4rem;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 8px;
+      display: block;
+      text-align: center;
+      max-width: 200px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .product-item__header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product-item_header-title {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-item_header-title {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    -ms-flex: 1 1 40%;
+    flex: 1 1 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-item__img img {
+    min-width: 300px;
+  }
+  .product-item__header {
+    max-width: 450px;
+    width: 100vw;
+  }
+  .product-item__characteristics {
+    max-width: 450px;
+    width: 100%;
+  }
+  .product-item__button {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .product-item__header {
+    max-width: 450px;
+    width: 100%;
+  }
+  .product-item_header-title {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item__img img {
+    min-width: 250px;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

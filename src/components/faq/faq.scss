@@ -1,0 +1,30 @@
+.faq {
+  .wrap {
+    .tab {
+      background: #f3f5f9;
+      h3 {
+        padding: 0 15px;
+      }
+      h4 {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .faq .wrap .tab h3 {
+    font-size: 1.2rem;
+    padding: 0 5px;
+  }
+  .faq .wrap .tab h4 {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .faq .wrap .tab h3 {
+    font-size: 1rem;
+  }
+}
