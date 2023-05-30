@@ -32,7 +32,6 @@ const MainPageSlider = ({items}) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  console.log(items)
   return (
     <div className="section-slider ">
       <Swiper

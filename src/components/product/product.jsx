@@ -76,16 +76,14 @@ const Product = () => {
           <h2 className="product-guarantee__title">Гарантия</h2>
           <h5 className="product-guarantee__subtitle">Гарантия качества от завода оконных конструкций "Фаворит" распространяется на все товары и перечень услуг:</h5>
           <div className="product-guarantee__wrap">
-          {
-            guarantee.map((guarantee) => {
-              return (
-                  <div className="product-guarantee__item">
-                    <span>{guarantee.period}</span>
-                    {guarantee.note}
-                  </div>
-              )
-            })
-          }
+          {guarantee.map((guarantee, idx) => {
+            return (
+              <div className="product-guarantee__item" key={idx}>
+                <span>{guarantee.period}</span>
+                {guarantee.note}
+              </div>
+            )
+          })}
           </div>
         </div>
       </div>

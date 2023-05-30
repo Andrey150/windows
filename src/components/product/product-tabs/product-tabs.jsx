@@ -61,8 +61,8 @@ const BasicTabs = ({manufacturer, description}) => {
         <div className="product-wrap" key={descIdx}>
           <TabPanel value={value} index={descIdx}>
             {desc.map((el, elIdx) => (
-              <div className='product-description'>
-                <h2 key={elIdx}>{el.windowTitle}</h2>
+              <div className='product-description' key={elIdx}>
+                <h2>{el.windowTitle}</h2>
                 <h4>{el.windowSubtitle}</h4>
                 <p>{el.description}</p>
               </div>
@@ -83,19 +83,19 @@ const BasicTabs = ({manufacturer, description}) => {
                 </div>
                 <div className="product-item__characteristics">
                   <div className="product-item__characteristics-description">
-                    <p>Размер окна</p><span></span><p>{item.size}</p>
+                    <p>Размер окна</p><span/><p>{item.size}</p>
                   </div>
                   {
-                    item.doorSize ? <div className="product-item__characteristics-description"><p>Размер Двери</p><span></span><p>{item.doorSize}</p></div> : null
+                    item.doorSize ? <div className="product-item__characteristics-description"><p>Размер Двери</p><span/><p>{item.doorSize}</p></div> : null
                   }
                   <div className="product-item__characteristics-description">
-                    <p>Системная глубина</p><span></span><p>{item.systemDepth}</p>
+                    <p>Системная глубина</p><span/><p>{item.systemDepth}</p>
                   </div>
                   <div className="product-item__characteristics-description">
-                    <p>Воздушные камеры</p><span></span><p>{item.airChambers}</p>
+                    <p>Воздушные камеры</p><span/><p>{item.airChambers}</p>
                   </div>
                   <div className="product-item__characteristics-description">
-                    <p>Толщина стеклопакета</p><span></span><p>{item.glassThinkness}</p>
+                    <p>Толщина стеклопакета</p><span/><p>{item.glassThinkness}</p>
                   </div>
                 </div>
                 <a className='product-item__button button' href={item.message}>Подробнее</a>

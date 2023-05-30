@@ -7,7 +7,7 @@ import Faq from "./components/faq/faq.jsx";
 import Promotions from "./components/promotions/promotions.jsx";
 import Advantages from "./components/advantages/advantages.jsx";
 import Product from "./components/product/product.jsx";
-import Reviews from "./components/reviews/reviews.jsx";
+// import Reviews from "./components/reviews/reviews.jsx";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path='/promotions' element={<Promotions/>}/>
           <Route path='/advantages' element={<Advantages/>}/>
           <Route path='/products' element={<Product/>}/>
-          <Route path='/reviews' element={<Reviews/>}/>
+          {/*<Route path='/reviews' element={<Reviews/>}/>*/}
         </Route>
       </Routes>
     </>

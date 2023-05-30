@@ -71,7 +71,7 @@ const Header = () => {
             <NavLink to='/promotions'>Акции</NavLink>
             <NavLink to='/advantages'>Преимущества</NavLink>
             <NavLink to='/products'>Каталог</NavLink>
-            <NavLink to='/reviews'>Отзывы</NavLink>
+            {/*<NavLink to='/reviews'>Отзывы</NavLink>*/}
           </nav>
           <div className="contacts">
             <button className='contacts-btn button' onClick={() => setShow(true)}>Связаться с нами</button>
